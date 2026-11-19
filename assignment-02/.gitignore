@@ -1,0 +1,9 @@
+# resource IDs of a live deployment - never commit
+infra/ids.env
+infra/ids.env.*
+# build / test leftovers
+*.zip
+__pycache__/
+*.pyc
+test.pdf
+.env

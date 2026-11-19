@@ -1,0 +1,9 @@
+# AWS CLI installer and local-only files
+aws/
+awscliv2.zip
+ids.env
+ids.env.*
+*.zip
+test.pdf
+teardown.log
+__pycache__/
