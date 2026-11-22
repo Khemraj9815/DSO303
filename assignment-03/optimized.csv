@@ -1,0 +1,32 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+668,207.33000000000004,3155.96,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+optimized > edge,Asia Pacific (Singapore),,Amazon CloudFront,0,6.76,81.12,USD,,"Data transfer out to internet (0 GB per month), Data transfer out to origin (7 GB per month), Number of requests (HTTPS) (4700000 per month)"
+optimized > edge,Asia Pacific (Singapore),,AWS Web Application Firewall (WAF),0,17.83,213.96,USD,,"Number of Web Access Control Lists (Web ACLs) utilized (1 per month), Number of Rules added per Web ACL (1 per month), Number of Rule Groups per Web ACL (0 per month), Number of Rules inside each Rule Group (0 per month), Number of Managed Rule Groups per Web ACL (3 per month)"
+optimized > edge,Asia Pacific (Singapore),,Amazon Route 53,0,0.5,6.00,USD,,Hosted Zones (1)
+optimized > edge,Asia Pacific (Singapore),,Amazon CloudWatch,0,4.585,55.02,USD,,"Number of mobile OTEL events and spans or spans per visit (70), Mobile sampling rate (1), Infrequent Access Logs: Data Ingested (13.1 GB), Infrequent Access Logs Delivered to CloudWatch Logs (0 GB)"
+optimized > api,Asia Pacific (Singapore),,Application Load Balancer,0,19.54,234.48,USD,,Number of Application Load Balancers (1)
+optimized > api,Asia Pacific (Singapore),Lambda exam-api,AWS Lambda,0,8.97,107.64,USD,,"Invoke Mode (Buffered), Architecture (x86), Architecture (x86), Number of requests (13200000 per month), Amount of ephemeral storage allocated (512 MB)"
+optimized > api,Asia Pacific (Singapore),this one is for exam-worker,AWS Lambda,0,0,0.00,USD,,"Invoke Mode (Buffered), Architecture (x86), Architecture (x86), Number of requests (54000 per month), Amount of ephemeral storage allocated (512 MB)"
+optimized > api,Asia Pacific (Singapore),,Public IPv4 Address,0,7.3,87.60,USD,,Number of In-use public IPv4 addresses (2)
+optimized > api,Asia Pacific (Singapore),,AWS PrivateLink,0,0,0.00,USD,,
+optimized > api,Asia Pacific (Singapore),,Amazon RDS for PostgreSQL,668,127.756,2201.07,USD,,"Storage amount (100 GB), Storage volume (General Purpose SSD (gp3)), Nodes (1), Instance Type (db.t4g.medium), Utilization (On-Demand only) (50 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (Partial Upfront)"
+optimized > api,Asia Pacific (Singapore),,RDS Backup,0,0.74,8.88,USD,,"Estimated annual increase in primary data (%) (0.2), Estimated daily change of primary data (%) (0.005), Amount of primary data to be backed up (10 GB), Monthly backups warm retention period (12 Months)"
+optimized > api,Asia Pacific (Singapore),,S3 Standard,0,2.05,24.60,USD,,"S3 Standard storage (80 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (10000), GET, SELECT, and all other requests from S3 Standard (10000)"
+optimized > api,Asia Pacific (Singapore),,S3 Standard - Infrequent Access,0,5.72,68.64,USD,,"S3 Standard-IA storage (400 GB per month), GET, SELECT, and all other requests from S3 Standard-IA (1000), Lifecycle Transition requests (10000), Data retrievals (10 GB per month)"
+optimized > api,Asia Pacific (Singapore),,Data Transfer,0,0,0.00,USD,,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month)"
+optimized > data and async,Asia Pacific (Singapore),,Amazon Simple Queue Service (SQS),0,0.32,3.84,USD,,Standard queue requests (0.8 million per month)
+optimized > data and async,Asia Pacific (Singapore),,Amazon Simple Email Service (SES),0,4.4,52.80,USD,,Email messages sent (44000 per month)
+optimized > data and async,Asia Pacific (Singapore),,AWS Secrets Manager,0,0.8300000000000001,9.96,USD,,"Number of secrets (2), Average duration of each secret (30 days), Number of API calls (5000 per month)"
+optimized > data and async,Asia Pacific (Singapore),,Amazon Cognito,0,0,0.00,USD,,"Optimization Rate for Token Requests (0), Optimization Rate for App Clients (0), Multi-region replication add-on (Disabled), Multi-region replication add-on (Disabled), Number of monthly active users (MAU) (8400)"
+optimized > data and async,Asia Pacific (Singapore),,AWS Key Management Service,0,0.024,0.29,USD,,"Number of customer managed Customer Master Keys (CMK) (0), Number of symmetric requests (8000)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
